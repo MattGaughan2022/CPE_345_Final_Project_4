@@ -1,0 +1,62 @@
+file 535311 1621293806                                          
+version 2
+run General-0-20210517-19:15:54-524
+attr configname General
+attr datetime 20210517-19:15:54
+attr experiment General
+attr inifile Final_Project_4.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network3
+attr processid 524
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 245
+param **.SourceA.interArrivalTime exponential(163.9s)
+param **.SourceB.interArrivalTime exponential(159.7s)
+param **.SourceC.interArrivalTime exponential(555.6s)
+param **.server.serviceTime 1500s
+param **.server1.serviceTime 1500s
+param **.server2.serviceTime 1500s
+param **.server3.serviceTime 1500s
+param **.SourceA.jobType 0
+param **.SourceB.jobType 1
+param **.SourceC.jobType 2
+param **.SourceA.startTime 0s
+param **.SourceA.stopTime 201599s
+param **.SourceB.startTime 201600s
+param **.SourceB.stopTime 604799s
+param **.SourceC.startTime 604800s
+param **.SourceC.stopTime 1353599s
+
+vector 0 Network3.passiveQueue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 Network3.passiveQueue1 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 2 Network3.passiveQueue2 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 3 Network3.final_Project_4_SinkA lifeTime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived jobs, vector"
+attr unit s
+vector 4 Network3.final_Project_4_SinkB lifeTime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived jobs, vector"
+attr unit s
+vector 5 Network3.final_Project_4_SinkC lifeTime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived jobs, vector"
+attr unit s
+0	1809 71813 0 10506 0 457500 2435 0 682 826325 376963205
+1	73622 159547 0 25196 0 1401192.133998635158 5037 0 2127 5977634 9132585758
+2	233169 89144 0 30744 0 1921632.68367582523 2775 0 1387 1923769 1778845531
+3	322313 48899 26 10547 1500 459000 1221 1500 257480.00305988 156772003.55195 26973265566754
+4	371212 105305 10557 25215 459132.68367582523 1402692.133998635158 2518 256911.34625296 798192.81224047 1331445175.0471 7.6462609414641e+014
+5	476517 58792 25219 30759 1402708.662718772559 1923132.68367582523 1387 570389.79061506 798695.43667525 940003485.39767 6.4322306288689e+014
+
